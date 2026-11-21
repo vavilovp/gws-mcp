@@ -1,0 +1,17 @@
+{
+  "mcp": {
+    "servers": {
+      "gws": {
+        "type": "local",
+        "command": ["node", "/absolute/path/to/gws-mcp/server.mjs"],
+        "env": {
+          "GWS_MCP_GROUPS": "gmail,calendar,drive,contacts",
+          "GWS_MCP_ALLOW_SEND": "1"
+        }
+      }
+    }
+  },
+  "permissions": [
+    { "action": "gws_send_email", "resource": "*", "effect": "ask" }
+  ]
+}

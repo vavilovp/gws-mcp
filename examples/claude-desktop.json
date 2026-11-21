@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "gws": {
+      "command": "npx",
+      "args": ["-y", "github:vavilovp/gws-mcp"],
+      "env": {
+        "GWS_MCP_GROUPS": "gmail,calendar,drive,contacts",
+        "GWS_MCP_ALLOW_SEND": "1"
+      }
+    }
+  }
+}

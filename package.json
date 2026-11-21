@@ -1,0 +1,44 @@
+{
+  "name": "gws-mcp",
+  "version": "0.4.0",
+  "description": "Minimal Google Workspace MCP server for Gmail, Calendar, Drive and Contacts. Zero dependencies.",
+  "type": "module",
+  "bin": {
+    "gws-mcp": "./server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "auth": "node server.mjs --auth",
+    "status": "node server.mjs --status",
+    "check": "node --check server.mjs",
+    "test": "node test/smoke.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "google",
+    "gmail",
+    "google-calendar",
+    "google-drive",
+    "google-contacts",
+    "opencode",
+    "claude"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vavilovp/gws-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vavilovp/gws-mcp/issues"
+  },
+  "homepage": "https://github.com/vavilovp/gws-mcp#readme"
+}
